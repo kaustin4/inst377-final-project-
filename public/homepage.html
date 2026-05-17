@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/analyze.js" defer></script>
+    <script src="/swiper.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>Chess Archetype Analysis</h2>
+        <div class="links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="dashboard.html">Analyzer Dashboard</a></li>
+            <li><a href="about.html">About</a></li>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-left">
+            <h1>Discover Your Chess Playstyle</h1>
+            <p>Analyze your Chess.com stats to reveal 
+                your archetype and playing strengths</p>
+            <div class="search">
+                <input type="text" id="username" placeholder="Enter Chess.com username...">
+                <button id="analyzebt">Analyze Me</button>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/068/642/207/small_2x/purple-and-silver-chess-rook-piece-on-white-background-strategic-game-element-photo.jpeg" alt="purpchess">
+        </div>
+    </section>
+    <section class="archetypes">
+        <div class="arch-header">
+            <h1>Possible Archetypes</h1>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide card">
+                <h3>Speeder</h3>
+                <p>Quick Player</p>
+                <small>Aggressive/Tactical</small>
+                </div>
+                
+                <div class="swiper-slide card">
+                    <h3>Strategist</h3>
+                    <p>Plays slow, structured chess.</p>
+                    <small>Positional/Endgame</small>
+                </div>
+                
+                <div class="swiper-slide card">
+                    <h3>Blitz Grinder</h3>
+                    <p>Strongest in blitz consistency.</p>
+                    <small>Pressure/Volume</small>
+                </div>
+                
+                <div class="swiper-slide card">
+                    <h3>Balanced</h3>
+                    <p>Performs evenly across all formats.</p>
+                    <small>Adaptive/Consistent</small>
+                </div>
+            </div>
+            
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+        </div>
+    </section>
+</body>
+</html>

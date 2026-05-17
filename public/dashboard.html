@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/chess.js" defer></script>
+     <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+     <nav class="navbar">
+        <h2>Your Chess Dashboard</h2>
+        <div class="links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="dashboard.html">Analyzer Dashboard</a></li>
+            <li><a href="about.html">About</a></li>
+        </div>
+    </nav>
+    
+    <section class="dashboard-grid">
+        
+        <div class="left-pan">
+            <div class="player-card">
+                <h2>Player Profile</h2>
+                
+                <h3 id="playerName"></h3>
+            </div>
+            
+            <div class="ratings-card">
+                <h2>Ratings</h2>
+                
+                <div class="rating">
+                    <h3>Blitz</h3>
+                    <p id="blitz"></p>
+                </div>
+                
+                <div class="rating">
+                    <h3>Rapid</h3>
+                    <p id="rapid"></p>
+                </div>
+                
+                <div class="rating">
+                    <h3>Bullet</h3>
+                    <p id="bullet"></p>
+                
+                </div>
+            </div>
+        </div>
+        
+        <div class="chart-card">
+            <h2>Ratings Overview</h2>
+
+            <div class="chart-container">
+            <canvas id="ratingChart"></canvas>
+            </div>
+        </div>
+        <div class="right-pan">
+            <div class="archetype-card">
+                <h2>Your Archetype</h2>
+
+                <h2 id="archetype"></h2>
+                <p id="description"></p>
+            </div>
+        </div>
+        <div class="herstory">
+            <h2>Search History</h2>
+            <div id="herstoryList"></div>
+        </div>
+
+    </section>
+
+</body>
+</html>
