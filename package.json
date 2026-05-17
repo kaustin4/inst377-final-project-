@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": " INST 377 Final Project",
   "main": "index.js",
-  "scripts": {
+  "scripts": { 
+    "start": "nodemon -e '*'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
